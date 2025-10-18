@@ -1,4 +1,5 @@
 import { getPost } from "@jay-es/jsonplaceholder-client";
+import { handleError } from "@/lib/error-handler";
 import { PostDetailPresentation } from "./presentation";
 import { PostAuthor } from "../post-author";
 
@@ -7,7 +8,7 @@ type Props = {
 };
 
 export async function PostDetailContainer({ postId }: Props) {
-  const post = await getPost(postId);
+  const post = await getPost(postId).catch(handleError);
 
   return (
     <PostDetailPresentation

@@ -1,4 +1,5 @@
 import { getUser } from "@jay-es/jsonplaceholder-client";
+import { handleError } from "@/lib/error-handler";
 import { UserDetailPresentation } from "./presentation";
 
 type Props = {
@@ -6,7 +7,7 @@ type Props = {
 };
 
 export async function UserDetailContainer({ userId }: Props) {
-  const user = await getUser(userId);
+  const user = await getUser(userId).catch(handleError);
 
   return <UserDetailPresentation user={user} />;
 }
