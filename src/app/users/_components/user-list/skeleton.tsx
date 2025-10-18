@@ -1,4 +1,4 @@
-import { ChevronRightIcon } from "./chevron-right-icon";
+import { ChevronRightIcon } from "@/components/chevron-right-icon";
 
 export function UserListSkeleton() {
   return (

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { User } from "@jay-es/jsonplaceholder-client";
-import { ChevronRightIcon } from "./chevron-right-icon";
+import { ChevronRightIcon } from "@/components/chevron-right-icon";
 
 type Props = {
   users: User[];

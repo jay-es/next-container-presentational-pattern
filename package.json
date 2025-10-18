@@ -12,7 +12,8 @@
     "@jay-es/jsonplaceholder-client": "^0.3.0",
     "next": "16.0.0-beta.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "valibot": "^1.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
